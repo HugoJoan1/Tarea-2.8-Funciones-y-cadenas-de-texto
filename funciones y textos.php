@@ -23,7 +23,32 @@
     </form>
     <br>
 
+<?php
+$texto = $_POST['texto'];
 
+//Hay Comandos que saque de W3SHOOLS
+if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['calcular2'])){
+
+    echo "La palabra en todas mayusculas es: " . mb_strtoupper($texto, 'UTF-8') . "<br>";
+    
+    }
+
+if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['calcular3'])){
+
+    echo "La palabra en todas minusculas es: " . mb_strtolower($texto, 'UTF-8') . "<br>";
+    
+    }
+
+if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['calcular1'])){
+
+    echo "La palabra tiene " . mb_strlen($texto, 'UTF-8') . " Caracteres<br>";
+    
+    }
+
+
+
+
+?>
 
 </body>
 </html>
