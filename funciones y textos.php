@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html{
+            text-align: center;
+            background-color: #20dff8;
+        }
+    </style>
 </head>
 <body>
    
    
-<h2>Ejercicio 2.8 </h2>
-<h3>Escribe una palabra y se le dara detalles de la plabra:</h3>
+<h2>Ejercicio 2.8: Funciones y cadenas de texto </h2>
+<h3>Escribe una palabra y se le dara detalles de la palabra:</h3>
     <form method="POST" action="">
         <label for="texto">texto:</label>
         <input type="text" step="any" name="texto" required>
