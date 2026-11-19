@@ -45,7 +45,41 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['calcular1'])){
     
     }
 
+if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['calcular4'])){
 
+    echo "La palabra invertida es: " . strrev($texto) . "<br>";
+    
+    }
+
+if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['calcular5'])){
+
+    if($texto == strrev($texto)){
+
+    echo "La palabra SI es palindromo";
+
+    }
+    else{
+
+    echo "La palabra NO es palindromo";
+
+    }
+    
+    }
+
+if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['calcular6'])){
+
+    $texto = mb_strtoupper($texto, 'UTF-8');
+
+    $vocales = 0;
+
+    for($i = 0; $i < mb_strlen($texto, 'UTF-8'); $i++){
+        if($texto[$i] == "A" || $texto[$i] == "A" || $texto[$i] == "E" || $texto[$i] == "I" || $texto[$i] == "O" || $texto[$i] == "U"){
+            $vocales++;
+        }
+    }
+    
+    echo "La palabra tiene $vocales vocales<br>"; 
+    }
 
 
 ?>
